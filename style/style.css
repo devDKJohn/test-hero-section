@@ -10,3 +10,66 @@ html, body {
     width: 100%;
 }
 
+.hero-full {
+    background: url("https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1") center center;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-full::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.678));
+}
+
+
+.inner {
+    min-height: 100vh;
+    max-width: 1200px;
+    padding: 60px 40px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+
+.hero-full .inner h1 {
+    font-size: 7em;
+    line-height: .8em;
+}
+
+.hero-full .inner p {
+    font-size: 1.5em;
+    padding: 0 10%;
+}
+
+.hero-full .inner .button-container {
+    display: flex;
+    margin-top: 40px;
+    gap: 35px;
+}
+
+.hero-full .inner .button-container a {
+    display: inline-block;
+    padding: 18px 45px;
+    border-radius: 5px;
+    text-decoration: none;
+    letter-spacing: .04em;
+    color: white;
+    background-color: #e98913;
+    font-size: 22px;
+}
+
+.hero-full .inner .button-container a.secondary {
+    background-color: #f9f9f92e;
+}
